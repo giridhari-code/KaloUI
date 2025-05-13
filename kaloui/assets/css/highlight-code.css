@@ -1,0 +1,123 @@
+/* General Code Block Styling */
+.codeblock-wrapper {
+    position: relative;
+    background-color: #282c34;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin: 20px 0;
+    font-family: 'Monaco', monospace;
+}
+
+.codeblock-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid #444;
+}
+
+.language-label {
+    font-weight: bold;
+}
+
+.copy-button {
+    background-color: #61dafb;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+    background-color: #21a1f1;
+}
+
+/* Code Block Content Styling */
+.codeblock-content {
+    display: flex;
+}
+
+.line-numbers {
+    color: #888;
+    padding: 10px;
+    background-color: #222;
+    font-size: 14px;
+    border-right: 1px solid #444;
+}
+
+.line-number {
+    display: block;
+    padding: 4px 0;
+    margin-right: 10px;
+}
+
+.code-line {
+    padding: 8px 15px;
+    color: #ddd;
+    font-size: 14px;
+    background-color: #282c34;
+    border-bottom: 1px solid #444;
+}
+
+.code-line:hover {
+    background-color: #333;
+}
+
+/* Syntax Highlighting Styling */
+.hljs {
+    background-color: transparent;
+}
+
+.hljs .hljs-comment {
+    color: #7a7a7a;
+}
+
+.hljs .hljs-keyword {
+    color: #c92b2b;
+}
+
+.hljs .hljs-string {
+    color: #98c379;
+}
+
+.hljs .hljs-variable {
+    color: #e5e5e5;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .codeblock-wrapper {
+        margin: 15px;
+    }
+
+    .codeblock-header {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .codeblock-wrapper {
+        margin: 10px;
+    }
+
+    .codeblock-header {
+        font-size: 10px;
+    }
+
+    .line-numbers {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .code-line {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
